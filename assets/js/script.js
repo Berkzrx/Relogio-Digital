@@ -10,10 +10,10 @@ const seconds = document.getElementById('seconds');
 
 
 setInterval(function time(){
-    let dateToday = new Date()
+    let dateToday = new Date();
     
     let year_today = dateToday.getFullYear();
-    let month_today = dateToday.getDay();
+    let month_today = dateToday.getMonth();
     let today_day = dateToday.getDate();
     
     let week = ['Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sab'];
@@ -40,6 +40,6 @@ setInterval(function time(){
     day.textContent = today_day;
 
     weekDay.textContent = day_week;
-});
+}, 1000);
 
 
